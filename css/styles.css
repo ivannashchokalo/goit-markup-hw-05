@@ -521,16 +521,13 @@ body {
 }
 
 .footer-form {
-
-}
-
-.form-input-btn-wrapper {
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .footer-form-input {
     padding-left: 16px;
-    margin-right: 24px;
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
@@ -634,15 +631,17 @@ body {
     right: 24px;
     width: 24px;
     height: 24px;
+    padding: 0;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #e7e9fc;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover,
 .modal-close-button:focus {
     background-color: #404bbf;
+    border: none;
 }
 
 .modal-close-button-icon {
@@ -671,6 +670,7 @@ body {
 }
 
 .modal-form-input-desc {
+    display: block;
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
@@ -690,6 +690,8 @@ body {
      border: 1px solid rgba(46, 47, 66, 0.4);
      border-radius: 4px;
      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     background-color: transparent;
+     outline: transparent;
 
     font-weight: 400;
     font-size: 12px;
@@ -732,13 +734,14 @@ body {
     width: 100%;
     height: 120px;
     resize: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    outline: transparent;
 
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
-    color: black);
+    color: rgba(46, 47, 66, 0.4));
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -793,6 +796,7 @@ textarea::placeholder {
     border: 1px solid #404bbf;
     background-color: #404bbf;
     fill: #f4f4fd;
+    border: none;
 }
 
 .modal-form-submit-btn {
